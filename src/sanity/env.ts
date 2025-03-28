@@ -1,7 +1,6 @@
 import { env } from "@/data/env/client";
 
-export const apiVersion =
-  process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2025-03-09";
+export const apiVersion = env.NEXT_PUBLIC_SANITY_API_VERSION;
 
 export const dataset = assertValue(
   env.NEXT_PUBLIC_SANITY_DATASET,
